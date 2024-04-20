@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background-color: hsl(212, 45%, 89%);
+        font-family: "Outfit";
+      }
+      .component {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .parent {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 320px;
+      }
+      .image {
+        width: 288px;
+        height: 288px;
+        border-radius: 10px;
+        margin-top: 16px;
+      }
+      .description {
+        font-size: 24px;
+        /* font-family: "Outfit"; */
+        text-align: center;
+        font-weight: 700;
+        /* padding: 5px; */
+      }
+      .message {
+        font-size: 15px;
+        /* font-family: "Outfit"; */
+        text-align: center;
+        font-weight: 400;
+        color: hsl(220, 15%, 55%);
+      }
+      .content {
+        margin-top: 24px;
+        width: 288px;
+        text-wrap: wrap;
+        margin-bottom: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      p {
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="component">
+      <div class="parent">
+        <img src="images/image-qr-code.png" alt="QR code" class="image" />
+        <div class="content">
+          <p class="description">
+            Improve your front-end skills by building projects
+          </p>
+          <p class="message">
+            Scan the QR code to visit front-end Mentor and take your coding
+            skills to next level
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
